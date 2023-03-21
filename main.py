@@ -40,7 +40,6 @@ for _ in result['exercises']:
                     "time": now_time,
                     "exercise": _["name"].title(),
                     "duration": _["duration_min"],
-                    "calories": _["nf_calories"]
                 }
             }
     s_response = requests.post(sheety_endpoint, headers=s_headers, json=sheet_input)
